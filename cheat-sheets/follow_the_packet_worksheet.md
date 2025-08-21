@@ -2,7 +2,10 @@
 
 **How to use:** For a single page load (e.g., `https://app.example.com/dashboard`), fill each section with concrete facts (IPs, certs, policy hits, logs). Repeat on corp LAN, VPN, and off-net.
 
-## 0) Scenario metadata
+> [!NOTE]
+> the Follow-the-Packet Worksheet is a guided lab exercise + checklist to help you trace one single request (like opening https://app.example.com) through every layer of the enterprise stack. It’s not just theory — it’s a way to force yourself to look at real logs, configs, and telemetry step by step. Think of it as a detective sheet.
+
+> ## 0) Scenario metadata
 - Date/time (UTC & local):
 - User & device name / asset tag:
 - Network (LAN/VPN/Off-net/Guest):
