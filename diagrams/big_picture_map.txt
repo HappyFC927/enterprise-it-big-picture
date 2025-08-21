@@ -1,0 +1,1 @@
+[User/Endpoint] → NAC → Switch/Core → NGFW → Proxy → ISP → CDN → Reverse Proxy/WAF → App → SIEM
