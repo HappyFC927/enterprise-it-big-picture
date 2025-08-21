@@ -1,20 +1,22 @@
 # 🌐 Enterprise-to-Cloud Big Picture (with Monitoring Points)
 
+```text
 [User / Endpoint]
-  └─(Power on → OS boot → **Defender for Endpoint** + Intune/MDM) 
+  └─(Power on → OS boot → Defender for Endpoint + Intune/MDM) 
     └─(802.1X / NAC posture)──[Access Switch/AP]──VLAN/QoS
       └──[Distribution/Core]──Routing/ACLs/NetFlow
-        └──[**Palo Alto NGFW/IPS**]──(SNAT/NAT)──Threat/Traffic logs
-          └──[**Zscaler SWG**]──URL filtering / DLP / SSL inspection / Sandbox
-            └──[**Cisco Umbrella DNS**]──DNS filtering / resolution
+        └──[Palo Alto NGFW/IPS]──(SNAT/NAT)──Threat/Traffic logs
+          └──[Zscaler SWG]──URL filtering / DLP / SSL inspection / Sandbox
+            └──[Cisco Umbrella DNS]──DNS filtering / resolution
               └──[Egress / SD-WAN]──ISP / Internet──Anycast
-                └──[**AWS CloudFront (CDN Edge + Shield Advanced + WAF)**]
+                └──[AWS CloudFront (CDN Edge + Shield Advanced + WAF)]
                   └──[Reverse Proxy / ALB]──[App Tier]──[DB / Cache / S3]
                     └──(IdP / SSO: Azure AD / Okta via OIDC/SAML)
                     └──(Secrets / PKI / HSM)
-                    └──(**Splunk SIEM** for centralized log correlation)
-                    └──(**Phantom SOAR** for automated response)
-                    
+                    └──(Splunk SIEM for centralized log correlation)
+                    └──(Phantom SOAR for automated response)
+```
+
 # ☁️ Cloud Environments & What to Monitor
 
 ## Azure
